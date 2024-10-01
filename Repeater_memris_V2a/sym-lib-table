@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "ub1qbm_parts")(type "KiCad")(uri "${KIPRJMOD}/resources/ub1qbm_parts.kicad_sym")(options "")(descr ""))
-)
