@@ -149,7 +149,7 @@
 	(net 3 "Reset")
 	(net 4 "Net-(U1-~{RESET}{slash}PC6)")
 	(net 5 "+3.3REF")
-	(net 6 "Net-(C10-Pad1)")
+	(net 6 "Net-(C9-Pad2)")
 	(net 7 "AFSK_RX")
 	(net 8 "Net-(C13-Pad2)")
 	(net 9 "AFSK_OUT")
@@ -187,7 +187,7 @@
 	(net 41 "Net-(U1-XTAL2{slash}PB7)")
 	(net 42 "RXU")
 	(net 43 "TXU")
-	(net 44 "Net-(C9-Pad2)")
+	(net 44 "Net-(C10-Pad1)")
 	(net 45 "Net-(C15-Pad2)")
 	(net 46 "Net-(C16-Pad2)")
 	(net 47 "Net-(C17-Pad2)")
@@ -195,16 +195,26 @@
 	(net 49 "Net-(U3-H{slash}L)")
 	(net 50 "unconnected-(U3-RX-Pad16)")
 	(net 51 "unconnected-(U3-TX-Pad17)")
-	(net 52 "unconnected-(U3-ANT-Pad12)")
+	(net 52 "unconnected-(C4-Pad1)")
 	(net 53 "unconnected-(U4-TX-Pad17)")
 	(net 54 "unconnected-(U4-AFON-Pad1)")
 	(net 55 "unconnected-(U4-RX-Pad16)")
 	(net 56 "unconnected-(U4-AFOUT-Pad3)")
 	(net 57 "unconnected-(J2-Pin_5-Pad5)")
-	(net 58 "unconnected-(U6-Pad3)")
-	(net 59 "unconnected-(U6-Pad2)")
-	(net 60 "unconnected-(U6-Pad1)")
-	(net 61 "unconnected-(U6-Pad4)")
+	(net 58 "unconnected-(C4-Pad2)")
+	(net 59 "unconnected-(C5-Pad1)")
+	(net 60 "unconnected-(C5-Pad2)")
+	(net 61 "unconnected-(C14-Pad1)")
+	(net 62 "unconnected-(C14-Pad2)")
+	(net 63 "Net-(C18-Pad1)")
+	(net 64 "Net-(C18-Pad2)")
+	(net 65 "GND_RF")
+	(net 66 "Net-(C30-Pad1)")
+	(net 67 "Net-(C31-Pad2)")
+	(net 68 "Net-(C33-Pad2)")
+	(net 69 "Net-(J1-In)")
+	(net 70 "Net-(U3-ANT)")
+	(net 71 "Net-(C19-Pad1)")
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "0002c421-2bcb-4a25-a1fd-487e4fdb14a8")
@@ -275,7 +285,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/b3f4041d-5d43-4aae-92e7-7a9d7641698a")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -419,17 +429,14 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+	(footprint "Spacemanic_SMD:L_0603_HS"
 		(layer "F.Cu")
-		(uuid "0a20b40f-c4f3-419f-b1d5-d314f08e4060")
-		(at 40.725 37.02)
-		(descr "wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm")
-		(tags "test point wire loop bead")
-		(property "Reference" "TP12"
-			(at 0.7 2.5 0)
+		(uuid "0b3798bc-b669-4a68-9b77-f400977504f0")
+		(at -13.8 137.76)
+		(property "Reference" "L9"
+			(at 0 -1.5 0)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "6c47352a-a512-4d01-b223-72b3605c472c")
+			(uuid "66677d3a-91a8-4cc6-8c94-775de1b3641d")
 			(effects
 				(font
 					(size 1 1)
@@ -437,10 +444,10 @@
 				)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 0 -2.8 0)
+		(property "Value" "8.2nH"
+			(at 0 1.6 0)
 			(layer "F.Fab")
-			(uuid "7fd4234b-8eee-414d-84a8-58d4f8de0f54")
+			(uuid "9b0b6e7b-62d8-433c-b42d-bd686a35c2dc")
 			(effects
 				(font
 					(size 1 1)
@@ -448,16 +455,15 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+		(property "Footprint" "Spacemanic_SMD:L_0603_HS"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ecd05585-f4f9-4b68-ac2c-cda989cb023d")
+			(uuid "e427d7a4-b316-45ce-b1bd-f302fa977da7")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -466,109 +472,177 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "70c9e7f9-113d-48ac-90ca-23266eb32843")
+			(uuid "f38424b5-d4fe-4192-aa7c-dc67ca7583e6")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "0603HP-8N2XGLW"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b38f2d36-b3e4-4fd1-ad23-d7eebc4abd08")
+			(uuid "96f1960e-f8b6-4e5c-aecb-0c27e3706e92")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/700ae65f-303b-4537-a9f9-4d07368698ab")
-		(sheetname "Koreň")
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/e57c5224-e511-4520-87b5-cd83b9437077")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
-		(attr through_hole)
-		(fp_circle
-			(center 0 0)
-			(end 1.5 0)
+		(attr smd)
+		(fp_line
+			(start -0.5 -0.68)
+			(end 0.5 -0.68)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
 			(layer "F.SilkS")
-			(uuid "d1755512-f6c6-44e7-addc-4062635a4f21")
+			(uuid "7cf8c543-f426-4d33-979a-e8267901f251")
 		)
-		(fp_circle
-			(center 0 0)
-			(end 1.8 0)
+		(fp_line
+			(start 0.5 0.68)
+			(end -0.5 0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3230eb04-4ef6-4337-a06c-96a468ca3579")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end -1.25 0.7)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
 			(layer "F.CrtYd")
-			(uuid "97ccaca1-a4a9-496d-9613-27f3df567e08")
+			(uuid "acb04efd-79e6-4571-b1b8-f650dd00ea38")
 		)
 		(fp_line
-			(start -0.9 -0.2)
-			(end 0.9 -0.2)
+			(start -1.25 -0.7)
+			(end 1.25 -0.7)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "164c8fed-7a4c-455f-8fd6-56786a847abc")
+			(layer "F.CrtYd")
+			(uuid "11dbfd79-c9df-4c3f-936b-b38dbcd6137f")
 		)
 		(fp_line
-			(start -0.9 0.2)
-			(end -0.9 -0.2)
+			(start 1.25 0.7)
+			(end -1.25 0.7)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "362ca900-759a-44b3-95af-bb134de8e06b")
+			(layer "F.CrtYd")
+			(uuid "b6a33496-3078-40e9-8277-1b570de22ca7")
 		)
 		(fp_line
-			(start 0.9 -0.2)
-			(end 0.9 0.2)
+			(start 1.25 0.7)
+			(end 1.25 -0.7)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "5864be16-a8b2-4b73-81ed-2bdb54617d73")
+			(layer "F.CrtYd")
+			(uuid "ba16e2c2-2fdd-44e6-a558-524fb75e7e25")
 		)
 		(fp_line
-			(start 0.9 0.2)
-			(end -0.9 0.2)
+			(start -0.8 -0.4)
+			(end 0.8 -0.4)
 			(stroke
-				(width 0.12)
+				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "d907416a-2413-49ee-8bb8-3d6b329e42e1")
+			(uuid "215b896c-bf36-4e8f-89f8-654242764b44")
 		)
-		(fp_circle
-			(center 0 0)
-			(end 1.3 0)
+		(fp_line
+			(start -0.8 0.4)
+			(end -0.8 -0.4)
 			(stroke
-				(width 0.12)
+				(width 0.1)
 				(type solid)
 			)
-			(fill none)
 			(layer "F.Fab")
-			(uuid "025ef9a2-fe03-463f-9e72-900cefc8a385")
+			(uuid "06da6989-6803-43c7-96d4-b65864ff5e37")
+		)
+		(fp_line
+			(start 0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "dd2a40b0-6443-409a-b332-c79af82318c6")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "11a23026-ff17-472e-b552-fd3e42c181fb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.7 2.5 0)
+			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "fdd8dc52-5a94-453e-85b1-227191c41bb2")
+			(uuid "69253c7e-4840-40f9-a9f6-82dbc4c7feb4")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.075)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.8 0)
+			(size 0.9 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 65 "GND_RF")
+			(pintype "passive")
+			(uuid "262d1083-80ed-49ca-9ef6-fdd7b5d0a986")
+		)
+		(pad "2" smd rect
+			(at 0.8 0)
+			(size 0.9 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 66 "Net-(C30-Pad1)")
+			(pintype "passive")
+			(uuid "e7a2c7ec-9a48-49a7-bd7b-6df556a8efce")
+		)
+		(model "${KISYS3DMOD}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Spacemanic_SMD:C_0603_HS"
+		(layer "F.Cu")
+		(uuid "0c6d83a5-0610-4700-8572-2b9522aaaeee")
+		(at -17.35 142.72)
+		(property "Reference" "C33"
+			(at 0 -1.6 0)
+			(layer "F.SilkS")
+			(uuid "4e5ce48f-1b21-4ab4-8239-25718351ab80")
 			(effects
 				(font
 					(size 1 1)
@@ -576,29 +650,186 @@
 				)
 			)
 		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 2 2)
-			(drill 1)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 7 "AFSK_RX")
-			(pinfunction "1")
-			(pintype "passive")
-			(teardrops
-				(best_length_ratio 0.5)
-				(max_length 1)
-				(best_width_ratio 1)
-				(max_width 2)
-				(curve_points 0)
-				(filter_ratio 0.9)
-				(enabled yes)
-				(allow_two_segments yes)
-				(prefer_zone_connections yes)
+		(property "Value" "1.8pF"
+			(at 0 1.6 0)
+			(layer "F.Fab")
+			(uuid "c444a12b-9b67-46ac-b377-f449efa85b2e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
 			)
-			(uuid "2f85d717-170c-44f0-8690-a7a11d01d6fd")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded.wrl"
+		(property "Footprint" "Spacemanic_SMD:C_0603_HS"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4cb137f-245e-4e6a-8650-9aa2f79ac086")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "819ac3dd-6679-4223-bb14-064cc04174c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "C0G/NP0, ±1%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "011b702d-860c-4dad-8f16-b91f1523ad7c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/ef5993ff-9905-4c6c-b791-177f3718cd5f")
+		(sheetname "Root")
+		(sheetfile "Repeater_memris_V2a.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.5 -0.68)
+			(end 0.5 -0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0b85ac6f-af4c-4e7d-9143-9da92c8853a8")
+		)
+		(fp_line
+			(start 0.5 0.68)
+			(end -0.5 0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8fa4ab3e-d8c7-47c3-8529-fd16893eb699")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3b378463-fc28-461b-8ce6-e16af3191f5d")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e286c2cb-ec31-41a2-a982-e6317435abf1")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "be9a9c3c-383b-41a1-b504-23cc7abfd3e4")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3f974def-ee4b-463a-83ed-c38520ade7f7")
+		)
+		(fp_line
+			(start -0.8 -0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2c74d55d-6e0b-4a85-834d-2982ae272310")
+		)
+		(fp_line
+			(start -0.8 0.4)
+			(end -0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a97ffbd4-4371-4c21-910d-1ff8188e572d")
+		)
+		(fp_line
+			(start 0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d6ae3f9b-4326-433c-84af-70f5b2391888")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f29b73de-c1b3-49f2-b3dd-d77712d1f985")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "e494dfb0-2d8b-4ce5-a1f9-7b7599be571c")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.075)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.85 0)
+			(size 0.8 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 67 "Net-(C31-Pad2)")
+			(pintype "passive")
+			(uuid "1246a060-37e5-466d-a47d-67e216c5d16d")
+		)
+		(pad "2" smd rect
+			(at 0.85 0)
+			(size 0.8 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 68 "Net-(C33-Pad2)")
+			(pintype "passive")
+			(uuid "85331ab0-d4f3-489f-b5c7-1be358782b55")
+		)
+		(model "${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -679,7 +910,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/4b2bb9f8-3cf6-43b2-9c6a-0fac454310e8")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -892,7 +1123,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/76d5f02b-d1a6-43b8-9561-8857ff7d0574")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1036,6 +1267,212 @@
 			)
 		)
 	)
+	(footprint "Spacemanic_SMD:L_0603_HS"
+		(layer "F.Cu")
+		(uuid "14cfdd9f-2594-4701-ac50-6742fcf43226")
+		(at -13.8 140.24)
+		(property "Reference" "L10"
+			(at 0 -1.5 0)
+			(layer "F.SilkS")
+			(uuid "c69a2dd2-aa14-4f85-9fde-ff5bb2e0fe69")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "8.2nH"
+			(at 0 1.6 0)
+			(layer "F.Fab")
+			(uuid "1a53641f-bb6b-41bc-9a9c-81a6f4c6cd39")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Spacemanic_SMD:L_0603_HS"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6ee44a0-f5d5-4e9a-beb6-6657c60679b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "319f58be-633b-4e85-8be8-a426213d6361")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0603HP-8N2XGLW"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92e6f510-9c50-44d7-a2c5-022414098249")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/33497bae-5c8a-4cdd-9db0-84b802521ac7")
+		(sheetname "Root")
+		(sheetfile "Repeater_memris_V2a.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.5 -0.68)
+			(end 0.5 -0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e79bb701-b1c8-4330-80f1-2706522790e8")
+		)
+		(fp_line
+			(start 0.5 0.68)
+			(end -0.5 0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a2b6427c-8e5e-47ad-b633-f6a7cfec8aec")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4e490a05-6374-4f9d-8e53-3eda29482ad9")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "693f89ea-b408-4b42-b1c2-7b7b74c90cc2")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f990e5c7-60f2-444d-bbcf-bfbb9ecdd5b9")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ce667631-6e01-4770-9cb3-cc08037f86c7")
+		)
+		(fp_line
+			(start -0.8 -0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3b4ece9d-26c1-472a-8dc4-95353a854374")
+		)
+		(fp_line
+			(start -0.8 0.4)
+			(end -0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bc9c3e53-abff-4f43-bf32-510b24a21fa9")
+		)
+		(fp_line
+			(start 0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a6b8df7c-2317-4086-afa8-a0cded554ede")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "62ffda6b-8077-47f0-bef7-985bc89ee4e3")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "8f6d3c94-1f93-4e3e-988c-e79a10015f27")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.075)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.8 0)
+			(size 0.9 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 65 "GND_RF")
+			(pintype "passive")
+			(uuid "baa54396-4f11-4aa9-bb01-100009bfbe06")
+		)
+		(pad "2" smd rect
+			(at 0.8 0)
+			(size 0.9 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 67 "Net-(C31-Pad2)")
+			(pintype "passive")
+			(uuid "6373edc3-3e93-4fb4-8476-207470c45fff")
+		)
+		(model "${KISYS3DMOD}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "178badde-dfb0-4d40-923c-24a7dca49bb6")
@@ -1090,7 +1527,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1105,7 +1542,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/fcc37aeb-f25b-41d5-8d2f-021d4090c32e")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1318,7 +1755,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/10b8a4b4-61d0-4875-977f-52d00d04ccde")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1636,7 +2073,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1651,7 +2088,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/8afb526e-4565-4853-b885-eac35018a1c9")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1770,7 +2207,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 2 "+5V")
+			(net 59 "unconnected-(C5-Pad1)")
 			(pintype "passive")
 			(uuid "0aa566fd-ea35-43ad-9019-0fb76018960e")
 		)
@@ -1779,7 +2216,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 1 "GND")
+			(net 60 "unconnected-(C5-Pad2)")
 			(pintype "passive")
 			(uuid "12425094-a088-4cf5-b1f4-c2eba4db9b05")
 		)
@@ -1864,7 +2301,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/0e9c1c80-f7ad-4221-ba52-4797460ca4e7")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2116,7 +2553,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2131,7 +2568,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c822203b-cda0-44fe-8847-ff21d426fecb")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2329,7 +2766,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2344,7 +2781,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/37f543aa-fd70-4a90-ab28-4923f0e9fcab")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2558,7 +2995,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/c885675e-2747-40bb-8916-f473c559da5c")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr through_hole)
 		(fp_circle
@@ -2736,7 +3173,7 @@
 			)
 		)
 		(path "/be822d1b-3b65-4955-9b9c-115fc1c7a27c")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_rect
@@ -2923,7 +3360,7 @@
 			(size 1.8 2.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 52 "unconnected-(U3-ANT-Pad12)")
+			(net 70 "Net-(U3-ANT)")
 			(pinfunction "ANT")
 			(pintype "input")
 			(thermal_bridge_angle 45)
@@ -3067,7 +3504,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/eb297934-8ff3-4417-add2-155339cfa388")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3265,7 +3702,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3280,7 +3717,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/a4317da6-b718-4b95-8bc0-16b61ea50031")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3478,7 +3915,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3493,7 +3930,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/1315fd56-1036-48a1-af62-2ca8083f90e4")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3706,7 +4143,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/55d16367-88c9-4ca6-aef1-8842c8d8b648")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3834,7 +4271,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 6 "Net-(C10-Pad1)")
+			(net 44 "Net-(C10-Pad1)")
 			(pintype "passive")
 			(uuid "389b2696-3d86-4c2b-90ec-6ea5915e54df")
 		)
@@ -3850,17 +4287,14 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+	(footprint "Spacemanic_SMD:C_0603_HS"
 		(layer "F.Cu")
-		(uuid "37f6860e-e38c-403a-838f-2145d3b2e049")
-		(at -99.025 77.175)
-		(descr "wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm")
-		(tags "test point wire loop bead")
-		(property "Reference" "TP8"
-			(at 0.7 2.5 0)
+		(uuid "3e042456-a732-45f0-96b2-3dacab869e55")
+		(at -17.35 145.2)
+		(property "Reference" "C34"
+			(at 0 -1.6 0)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "e7f34d7a-ef8d-47ab-a16a-1e0c36b6bbf1")
+			(uuid "21e78b17-33bc-47d5-9f17-72558eb5b95a")
 			(effects
 				(font
 					(size 1 1)
@@ -3868,10 +4302,10 @@
 				)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 0 -2.8 0)
+		(property "Value" "15pF"
+			(at 0 1.6 0)
 			(layer "F.Fab")
-			(uuid "135e4b7b-4ae1-4157-9bfe-fce6cb57abba")
+			(uuid "c32ec6c0-2775-4a66-944e-99ca4a4305a7")
 			(effects
 				(font
 					(size 1 1)
@@ -3879,16 +4313,15 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+		(property "Footprint" "Spacemanic_SMD:C_0603_HS"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b54b31bd-287b-4d8b-b888-10b8666c9065")
+			(uuid "a16d721e-ee28-420b-b1df-fbad2b99823e")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -3897,139 +4330,158 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f3222966-1543-483e-aa88-e7b57e8d066a")
+			(uuid "d000efa8-47f2-4d2f-892d-9201ce664e25")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "C0G/NP0, ±1%"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8ee3eff8-f69c-4e9c-9ab9-bea81bce1040")
+			(uuid "638e1d4f-4581-44f6-94af-b88180efb731")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/5e8869b8-29ca-4a01-a54a-012761055af2")
-		(sheetname "Koreň")
+		(property ki_fp_filters "C_*")
+		(path "/75cf9789-e5d7-43f0-a000-b270e92b5109")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
-		(attr through_hole)
-		(fp_circle
-			(center 0 0)
-			(end 1.5 0)
+		(attr smd)
+		(fp_line
+			(start -0.5 -0.68)
+			(end 0.5 -0.68)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
 			(layer "F.SilkS")
-			(uuid "0a51443e-4e42-47e5-9d98-adb950437dbb")
+			(uuid "31c83c10-5565-416f-acb5-08f50b0a8ef4")
 		)
-		(fp_circle
-			(center 0 0)
-			(end 1.8 0)
+		(fp_line
+			(start 0.5 0.68)
+			(end -0.5 0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "721d42b9-ac25-42b4-853e-49c63b17c369")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end -1.25 0.7)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
 			(layer "F.CrtYd")
-			(uuid "c805aa50-4365-4f47-b9b1-a7f1657d7ae1")
+			(uuid "c18e7582-dee7-4ae2-ae17-971ec166d84b")
 		)
 		(fp_line
-			(start -0.9 -0.2)
-			(end 0.9 -0.2)
+			(start -1.25 -0.7)
+			(end 1.25 -0.7)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "a4377eac-c7bc-411b-8f8c-b7665885d051")
+			(layer "F.CrtYd")
+			(uuid "f3b0f627-9e08-46b3-ad7c-f9622839566f")
 		)
 		(fp_line
-			(start -0.9 0.2)
-			(end -0.9 -0.2)
+			(start 1.25 0.7)
+			(end -1.25 0.7)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "69957cd0-888e-4f31-8b10-e65aa614d58c")
+			(layer "F.CrtYd")
+			(uuid "39d5022e-45de-443f-9a9c-413dc488878b")
 		)
 		(fp_line
-			(start 0.9 -0.2)
-			(end 0.9 0.2)
+			(start 1.25 0.7)
+			(end 1.25 -0.7)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "4e5bcaaf-2e96-4cd9-9664-60bbb61fcbaa")
+			(layer "F.CrtYd")
+			(uuid "c794cd76-e7ba-4851-8a5c-568d888bdd90")
 		)
 		(fp_line
-			(start 0.9 0.2)
-			(end -0.9 0.2)
+			(start -0.8 -0.4)
+			(end 0.8 -0.4)
 			(stroke
-				(width 0.12)
+				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "b7514acc-44de-4741-a59d-b063cc5e5ca6")
+			(uuid "d84dd2a0-e296-4abf-9cff-b22b1039c756")
 		)
-		(fp_circle
-			(center 0 0)
-			(end 1.3 0)
+		(fp_line
+			(start -0.8 0.4)
+			(end -0.8 -0.4)
 			(stroke
-				(width 0.12)
+				(width 0.1)
 				(type solid)
 			)
-			(fill none)
 			(layer "F.Fab")
-			(uuid "6b6ff1b2-b47e-47de-aad2-7ec194c261cd")
+			(uuid "00c12d66-30b9-44c2-a9a6-3f1c365112c0")
+		)
+		(fp_line
+			(start 0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8fe15bfe-55a1-40ae-a1f8-9d983a8e12af")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e5455596-39eb-4e99-b96d-343b7bec4622")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.7 2.5 0)
+			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "5533683d-c4a8-4f3d-9a79-72de8df3a345")
+			(uuid "744c0c85-2cc5-412a-94bb-098b93591573")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.4 0.4)
+					(thickness 0.075)
 				)
 			)
 		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 2 2)
-			(drill 1)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 2 "+5V")
-			(pinfunction "1")
+		(pad "1" smd rect
+			(at -0.85 0)
+			(size 0.8 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 68 "Net-(C33-Pad2)")
 			(pintype "passive")
-			(teardrops
-				(best_length_ratio 0.5)
-				(max_length 1)
-				(best_width_ratio 1)
-				(max_width 2)
-				(curve_points 0)
-				(filter_ratio 0.9)
-				(enabled yes)
-				(allow_two_segments yes)
-				(prefer_zone_connections yes)
-			)
-			(uuid "994a157e-1321-46a6-8523-0119a23c11e1")
+			(uuid "fa881e9e-5d9d-4d37-8713-6a687cc60af5")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded.wrl"
+		(pad "2" smd rect
+			(at 0.85 0)
+			(size 0.8 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 65 "GND_RF")
+			(pintype "passive")
+			(uuid "4ea3d1cf-b3ac-47ac-9eaa-c6f34e9672eb")
+		)
+		(model "${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4110,7 +4562,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/c39a72de-81e1-4652-a37c-73b8d089eb34")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr through_hole)
 		(fp_circle
@@ -4289,7 +4741,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/3bcffc88-55e1-4100-baf0-3942ba0c0297")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -4503,7 +4955,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/04dd6530-e268-46af-a90f-3b02c4fbda9a")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4647,6 +5099,212 @@
 			)
 		)
 	)
+	(footprint "Spacemanic_SMD:L_0603_HS"
+		(layer "F.Cu")
+		(uuid "437e3a2a-1c06-4e34-9156-5e25d852e2bd")
+		(at -13.8 135.28)
+		(property "Reference" "L8"
+			(at 0 -1.5 0)
+			(layer "F.SilkS")
+			(uuid "728f1e96-b957-4ab5-b465-9a22236e7c22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "22nH"
+			(at 0 1.6 0)
+			(layer "F.Fab")
+			(uuid "853d9122-5b21-4b9d-bc42-ecfab0ea9040")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Spacemanic_SMD:L_0603_HS"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "421e9441-30cb-4a46-9c1d-8cd36708c436")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66c9eadd-b50e-4209-bc2a-57b09b2e3ecd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0603HP-22NXGLW"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6fd9dec9-63a5-4108-9fe6-e5186d162698")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/4c31bfb9-6bfd-4a27-a6d5-ea5ac2016cb0")
+		(sheetname "Root")
+		(sheetfile "Repeater_memris_V2a.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.5 -0.68)
+			(end 0.5 -0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "968a4a9b-21a1-48d0-b790-1d0831f1c570")
+		)
+		(fp_line
+			(start 0.5 0.68)
+			(end -0.5 0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "96f98479-b03f-4992-8ccd-c8118eedc5c4")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "aaabe90e-ad7d-4e49-9fa7-eb2b596af514")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "30b560a2-52d8-4a42-8aaf-aef2daa05f06")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "44ae1162-4d60-416c-90ff-65774212b02f")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bd390ef7-b389-4697-997b-0b60b2e10a98")
+		)
+		(fp_line
+			(start -0.8 -0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e26aef3a-e4f7-46dd-afdf-cf3298265c6d")
+		)
+		(fp_line
+			(start -0.8 0.4)
+			(end -0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "da0eece2-b229-4fe5-b7f6-09ca09746ac6")
+		)
+		(fp_line
+			(start 0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fa002956-b918-4e08-979d-c8fe0da897dd")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5ba5115a-49ac-4c77-b7ea-6b5be03c6f01")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "2ded27a6-0dbb-40f9-ba27-9cab5454c182")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.075)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.8 0)
+			(size 0.9 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 69 "Net-(J1-In)")
+			(pintype "passive")
+			(uuid "3fd723f4-75d1-47f3-b94d-6beaeb241d27")
+		)
+		(pad "2" smd rect
+			(at 0.8 0)
+			(size 0.9 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 66 "Net-(C30-Pad1)")
+			(pintype "passive")
+			(uuid "1b76a211-d599-40a7-852c-b98d65efa883")
+		)
+		(model "${KISYS3DMOD}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 		(layer "F.Cu")
 		(uuid "4710c91f-beee-4661-915f-ae2e700816f0")
@@ -4716,7 +5374,7 @@
 		)
 		(property ki_fp_filters "SOT?223*TabPin2*")
 		(path "/01a0c1a7-505c-4625-947f-ea9c6e2b24b0")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4994,7 +5652,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/02171755-0735-4f88-bb07-9674bb6160e4")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr through_hole)
 		(fp_circle
@@ -5184,7 +5842,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/639ec7d4-5d62-4590-905d-a110b5f345a9")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5328,6 +5986,212 @@
 			)
 		)
 	)
+	(footprint "Spacemanic_SMD:C_0603_HS"
+		(layer "F.Cu")
+		(uuid "552a623d-4ae6-41b8-8bd5-81ef289469ad")
+		(at -17.35 140.24)
+		(property "Reference" "C32"
+			(at 0 -1.6 0)
+			(layer "F.SilkS")
+			(uuid "30ad96b6-ac61-4aea-83b4-d9532741fe3c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10pF"
+			(at 0 1.6 0)
+			(layer "F.Fab")
+			(uuid "d378ed6d-b528-49c2-abdf-696fcfa9a288")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Spacemanic_SMD:C_0603_HS"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "678c4c2f-9354-40e1-a073-e9a76ad61bbd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0777b8ae-0f60-4dfb-a398-89a52a442d74")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "C0G/NP0, ±1%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68076fba-e99f-4f74-8793-d99005c5c793")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/d9eb57f9-487d-46c7-a3d0-68cded6ef352")
+		(sheetname "Root")
+		(sheetfile "Repeater_memris_V2a.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.5 -0.68)
+			(end 0.5 -0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9090730d-b041-4c96-8de7-4de0dc90a21b")
+		)
+		(fp_line
+			(start 0.5 0.68)
+			(end -0.5 0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "be3f7b1e-374b-4add-af5b-930e0738fef5")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "342bcec6-6fb7-4877-8275-fe58a655e383")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "82c563c6-a8bd-4ef5-86b4-0488d3a5e0fa")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4506fdeb-29d1-4bc9-a99c-a12213824788")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8a83c67d-28f7-4acb-9e1e-4be0a0176a04")
+		)
+		(fp_line
+			(start -0.8 -0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "79ec9d25-6e08-4465-95cf-45016606e673")
+		)
+		(fp_line
+			(start -0.8 0.4)
+			(end -0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2d8d8cf1-d1f4-49de-b593-d122c965f7f7")
+		)
+		(fp_line
+			(start 0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f54ba36b-c175-4c9d-a04d-e10811aacb7e")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1c434aa9-5ad9-42e7-908e-3105235da6b9")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "32990376-7f0f-4811-b256-79fa9a5b52aa")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.075)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.85 0)
+			(size 0.8 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 67 "Net-(C31-Pad2)")
+			(pintype "passive")
+			(uuid "a5d64d6a-e8f3-4696-a8c5-21af6637915d")
+		)
+		(pad "2" smd rect
+			(at 0.85 0)
+			(size 0.8 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 65 "GND_RF")
+			(pintype "passive")
+			(uuid "149ee3d4-7fbb-453f-a2fe-7662503c0dfb")
+		)
+		(model "${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "5679bd93-4041-4df3-b9be-71c45dad331c")
@@ -5397,7 +6261,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/5ed146ba-ba2b-4764-baa0-7fd42476e7b4")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5610,7 +6474,7 @@
 		)
 		(property ki_fp_filters "TQFP*7x7mm*P0.8mm*")
 		(path "/c7245b40-77be-48ff-a44d-7fd4103fec1e")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6106,197 +6970,6 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-		(layer "F.Cu")
-		(uuid "61992125-6123-4fe0-9af7-7f289044f921")
-		(at -59.26 89.65 90)
-		(descr "wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm")
-		(tags "test point wire loop bead")
-		(property "Reference" "TP1"
-			(at 0.7 2.5 -90)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "84f84af5-009c-46ae-9b46-680197e7a84e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 0 -2.8 -90)
-			(layer "F.Fab")
-			(uuid "c62dad3c-2e80-4512-81c6-c12db188d1e0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0afef9e8-35db-421f-a747-7f1e8697f874")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f80b31bf-815f-438e-9e5b-b8a197293035")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0cb0d0fd-b49d-424d-a9d5-00f86b32c73e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/827b0886-001b-4ea9-8482-6392a611b7d2")
-		(sheetname "Koreň")
-		(sheetfile "Repeater_memris_V2a.kicad_sch")
-		(attr through_hole)
-		(fp_circle
-			(center 0 0)
-			(end 1.5 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.SilkS")
-			(uuid "efbfe258-a216-47c2-aa19-7fe678797e7e")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1.8 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "e278c4c6-e9f0-4de2-98e6-4a62cc2a25ec")
-		)
-		(fp_line
-			(start 0.9 -0.2)
-			(end 0.9 0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "5f1f6998-b129-4d80-8131-b67c77976abb")
-		)
-		(fp_line
-			(start -0.9 -0.2)
-			(end 0.9 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2ed90590-ce99-4692-b621-630de4b6852a")
-		)
-		(fp_line
-			(start 0.9 0.2)
-			(end -0.9 0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "431b01ec-3a3d-4f8e-9d7f-53efa6252128")
-		)
-		(fp_line
-			(start -0.9 0.2)
-			(end -0.9 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "9443398d-cee6-47f6-b657-f94ece154034")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1.3 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "5caca638-60f6-46dc-9980-a21493e5150c")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0.7 2.5 -90)
-			(layer "F.Fab")
-			(uuid "ce2e6519-b08e-4e19-8be2-14309044abee")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0 90)
-			(size 2 2)
-			(drill 1)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 2 "+5V")
-			(pinfunction "1")
-			(pintype "passive")
-			(teardrops
-				(best_length_ratio 0.5)
-				(max_length 1)
-				(best_width_ratio 1)
-				(max_width 2)
-				(curve_points 0)
-				(filter_ratio 0.9)
-				(enabled yes)
-				(allow_two_segments yes)
-				(prefer_zone_connections yes)
-			)
-			(uuid "8bde82a4-5aad-43aa-b800-bf6c6d78ae93")
-		)
-		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "64730f1f-5b68-49db-be5e-b9e926f33b5c")
@@ -6366,7 +7039,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/2c1a1b5e-88a1-4776-9314-99bd53271d72")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6579,7 +7252,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/67ff2297-d6fd-4d61-b688-673bb22f4cfd")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6707,7 +7380,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 6 "Net-(C10-Pad1)")
+			(net 44 "Net-(C10-Pad1)")
 			(pintype "passive")
 			(uuid "ffaa800c-c680-4087-97d6-686382bd0d76")
 		)
@@ -6723,17 +7396,14 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+	(footprint "Spacemanic_SMD:L_0603_HS"
 		(layer "F.Cu")
-		(uuid "6c221744-072c-4bb2-b35d-13313e50c89f")
-		(at 56.135 38.945)
-		(descr "wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm")
-		(tags "test point wire loop bead")
-		(property "Reference" "TP14"
-			(at 0.7 2.5 0)
+		(uuid "6b35df54-8b34-4a14-b11b-b0c8e57ecbde")
+		(at -13.8 142.72)
+		(property "Reference" "L11"
+			(at 0 -1.5 0)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ebe8edfc-a44a-48e2-a0aa-96190ac95959")
+			(uuid "3f940785-5e6c-483d-adef-3c02acf2225b")
 			(effects
 				(font
 					(size 1 1)
@@ -6741,10 +7411,10 @@
 				)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 0 -2.8 0)
+		(property "Value" "8.2nH"
+			(at 0 1.6 0)
 			(layer "F.Fab")
-			(uuid "345d1626-908d-4ba3-b465-b95e71c313b3")
+			(uuid "64ed6d3c-4a7d-4389-a1ea-aef0957a6e62")
 			(effects
 				(font
 					(size 1 1)
@@ -6752,16 +7422,15 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+		(property "Footprint" "Spacemanic_SMD:L_0603_HS"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "97750305-7196-4558-b827-be5f23b93551")
+			(uuid "91a33d04-269d-4282-9682-bb8366f1a9b1")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -6770,109 +7439,177 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bdb8633c-2576-4b24-bef5-0322d7c7dd17")
+			(uuid "61d44062-25d4-43f9-bf02-4f024685a14a")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "0603HP-8N2XGLW"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "633ac21c-df6e-4f67-b10c-40eb263a1c17")
+			(uuid "3f9bd095-53a4-47d2-8f28-81cde52cc695")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/4000e7cb-500e-482d-926c-cb895e5769fa")
-		(sheetname "Koreň")
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/e593a019-5853-4c32-9898-3828dd382432")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
-		(attr through_hole)
-		(fp_circle
-			(center 0 0)
-			(end 1.5 0)
+		(attr smd)
+		(fp_line
+			(start -0.5 -0.68)
+			(end 0.5 -0.68)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
 			(layer "F.SilkS")
-			(uuid "a59ea757-104f-4776-940c-52a7a8c69479")
+			(uuid "e8d14ef9-7c6a-4132-9dbe-cfc0a257a21f")
 		)
-		(fp_circle
-			(center 0 0)
-			(end 1.8 0)
+		(fp_line
+			(start 0.5 0.68)
+			(end -0.5 0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "254d7315-18a3-4800-9926-c72cf377e20d")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end -1.25 0.7)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
 			(layer "F.CrtYd")
-			(uuid "76c055df-4471-4aa9-91f0-346ccefb6cab")
+			(uuid "584b5bd1-d1cb-4c25-8ea1-c06cdb9038b9")
 		)
 		(fp_line
-			(start -0.9 -0.2)
-			(end 0.9 -0.2)
+			(start -1.25 -0.7)
+			(end 1.25 -0.7)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "24593504-1cb2-4f3c-9e9b-fd62b3e5cb8c")
+			(layer "F.CrtYd")
+			(uuid "cbcde14f-1f94-4c0a-ad4b-87116adf3e46")
 		)
 		(fp_line
-			(start -0.9 0.2)
-			(end -0.9 -0.2)
+			(start 1.25 0.7)
+			(end -1.25 0.7)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "a4178f93-0821-49bc-a072-9a14f1c9dbb4")
+			(layer "F.CrtYd")
+			(uuid "75aa3401-ff00-4d1d-868f-8783561c743c")
 		)
 		(fp_line
-			(start 0.9 -0.2)
-			(end 0.9 0.2)
+			(start 1.25 0.7)
+			(end 1.25 -0.7)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "ce1315d0-066b-47bc-b23f-c8597aeecaf0")
+			(layer "F.CrtYd")
+			(uuid "df53b4e9-b0ba-4b14-ac03-1ee9bc9e1da6")
 		)
 		(fp_line
-			(start 0.9 0.2)
-			(end -0.9 0.2)
+			(start -0.8 -0.4)
+			(end 0.8 -0.4)
 			(stroke
-				(width 0.12)
+				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "ced1eaf9-58d7-45d0-95d1-e4a66d9151dc")
+			(uuid "56d3ddb5-c875-4a70-a334-66cce6975e47")
 		)
-		(fp_circle
-			(center 0 0)
-			(end 1.3 0)
+		(fp_line
+			(start -0.8 0.4)
+			(end -0.8 -0.4)
 			(stroke
-				(width 0.12)
+				(width 0.1)
 				(type solid)
 			)
-			(fill none)
 			(layer "F.Fab")
-			(uuid "3f3056d4-b179-4709-8f8b-70ae6e283ed7")
+			(uuid "e2a95aa9-3273-47ba-a1db-964f90dbf48a")
+		)
+		(fp_line
+			(start 0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "66f910bb-dd39-4fb6-98d2-95c0556c4dd3")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "86c945d3-843f-4ed6-9956-692ac344d5e7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.7 2.5 0)
+			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "7dbf338a-9be5-411d-9050-ad26db3b1a72")
+			(uuid "513b5b77-225f-403d-967e-70904d66f9bc")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.075)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.8 0)
+			(size 0.9 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 65 "GND_RF")
+			(pintype "passive")
+			(uuid "184b3b39-0f14-43f6-b031-7d48deed36f5")
+		)
+		(pad "2" smd rect
+			(at 0.8 0)
+			(size 0.9 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 68 "Net-(C33-Pad2)")
+			(pintype "passive")
+			(uuid "221948a8-c376-4d24-9a94-dfcff77c2d34")
+		)
+		(model "${KISYS3DMOD}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Spacemanic_SMD:C_0603_HS"
+		(layer "F.Cu")
+		(uuid "6dcabefa-47d3-4565-a1da-b5f2ce035387")
+		(at -17.35 137.76)
+		(property "Reference" "C31"
+			(at 0 -1.6 0)
+			(layer "F.SilkS")
+			(uuid "c62cb0f3-117b-42cb-8752-3674b00aabc0")
 			(effects
 				(font
 					(size 1 1)
@@ -6880,29 +7617,186 @@
 				)
 			)
 		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 2 2)
-			(drill 1)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 14 "PTT_AT")
-			(pinfunction "1")
-			(pintype "passive")
-			(teardrops
-				(best_length_ratio 0.5)
-				(max_length 1)
-				(best_width_ratio 1)
-				(max_width 2)
-				(curve_points 0)
-				(filter_ratio 0.9)
-				(enabled yes)
-				(allow_two_segments yes)
-				(prefer_zone_connections yes)
+		(property "Value" "1.8pF"
+			(at 0 1.6 0)
+			(layer "F.Fab")
+			(uuid "131c8d98-2c91-4a59-ba0f-35b654044e76")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
 			)
-			(uuid "27d78693-7a76-45ab-aa0c-fe08a1121284")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded.wrl"
+		(property "Footprint" "Spacemanic_SMD:C_0603_HS"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48827aac-a4cb-497a-8305-b14e1e21eb5c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32e656ca-29b3-4355-a191-852cc19c9b20")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "C0G/NP0, ±1%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8aec9f2-507c-4076-89bc-4d356be01282")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/bdc51773-d37f-41a1-899b-3aafd105853a")
+		(sheetname "Root")
+		(sheetfile "Repeater_memris_V2a.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.5 -0.68)
+			(end 0.5 -0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5d568929-cc9e-4bad-be56-3112d969cc45")
+		)
+		(fp_line
+			(start 0.5 0.68)
+			(end -0.5 0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "063b1b06-c306-4db0-9b8b-3d5bc18a1bd4")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "20708a92-ff48-4cc2-bc55-31b46d8b1140")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "eac30bab-639f-4919-bdc2-74fd2b2b7e45")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e6c47ad5-2403-42ba-a151-b3c283f2fc7e")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "eeff8794-8557-48b5-b439-528cc6087942")
+		)
+		(fp_line
+			(start -0.8 -0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a894c68a-2372-41b4-b2c0-86757df81b50")
+		)
+		(fp_line
+			(start -0.8 0.4)
+			(end -0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1731d79d-5b28-4d47-b4f7-573baca2f47e")
+		)
+		(fp_line
+			(start 0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "25422dfd-1660-4a40-91d9-9cf4bf3bf0d2")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9dde934e-a35e-4b92-83ed-1ed9d1cfcad7")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "cb46b9cd-5ab1-47bf-8ffa-44ecaec7f1b9")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.075)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.85 0)
+			(size 0.8 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 66 "Net-(C30-Pad1)")
+			(pintype "passive")
+			(uuid "75cb6dac-48ad-409d-90a3-4bb83f53023c")
+		)
+		(pad "2" smd rect
+			(at 0.85 0)
+			(size 0.8 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 67 "Net-(C31-Pad2)")
+			(pintype "passive")
+			(uuid "39c65943-5be8-4e5b-aa15-d3b8050c9f23")
+		)
+		(model "${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6968,7 +7862,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6983,7 +7877,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/661b7374-6463-4219-8ebd-e849ad279a9a")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7181,7 +8075,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7196,7 +8090,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/cfe7a6c4-ebb7-4e78-91c2-05f9eefc502c")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7408,7 +8302,7 @@
 			)
 		)
 		(path "/5fd49db6-b3f0-4ad7-b3d9-f71c9e79bd1f")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_rect
@@ -7724,7 +8618,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7739,7 +8633,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/fc976424-d819-432c-8b43-059babb17624")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7883,6 +8777,216 @@
 			)
 		)
 	)
+	(footprint "Capacitor_SMD:C_0603_1608Metric"
+		(layer "F.Cu")
+		(uuid "76cda0f6-1458-4806-bb9e-e9ee85bb8798")
+		(at -10.02 135.295)
+		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(tags "capacitor")
+		(property "Reference" "C18"
+			(at 0 -1.43 0)
+			(layer "F.SilkS")
+			(uuid "5628cb81-6eec-4e1a-b799-74d766985da0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 1.43 0)
+			(layer "F.Fab")
+			(uuid "e782d736-349b-4d12-b9e2-386a46efe83b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c45f731-e02c-45b9-bfab-e22d0fa3021a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5e3f369-d171-4d17-85da-73a957edb7ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "18702f6f-3bad-48f6-9f41-392671e1fc7e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/23577981-b742-43ff-b0a7-2c248c7ac84c")
+		(sheetname "Root")
+		(sheetfile "Repeater_memris_V2a.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2d7398f7-e03a-4773-ab5c-bec6af30124a")
+		)
+		(fp_line
+			(start -0.14058 0.51)
+			(end 0.14058 0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "57ab1eee-0c1e-4e9a-b3eb-1bd01a5d1b63")
+		)
+		(fp_line
+			(start -1.48 -0.73)
+			(end 1.48 -0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "324d62a3-eadd-464a-b0e3-37cbd2b52094")
+		)
+		(fp_line
+			(start -1.48 0.73)
+			(end -1.48 -0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5fe870f6-c828-4f65-ad00-28132bc88191")
+		)
+		(fp_line
+			(start 1.48 -0.73)
+			(end 1.48 0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c60da86c-5550-4da3-9b7d-3c87fe2327a5")
+		)
+		(fp_line
+			(start 1.48 0.73)
+			(end -1.48 0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5876feea-4e86-4456-a374-1113313c058f")
+		)
+		(fp_line
+			(start -0.8 -0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fbbf67f7-c479-4b69-ac61-06a21feb2caa")
+		)
+		(fp_line
+			(start -0.8 0.4)
+			(end -0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "75f929b5-f9b8-4523-af0d-724268d16af5")
+		)
+		(fp_line
+			(start 0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0f2e20fc-a56b-4694-9375-3771d5d4dc22")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6111bbee-8a4a-4453-bc39-54ffddd39b0d")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "a9addb41-b4b4-4897-9ba7-c8fe7bec74d6")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.775 0)
+			(size 0.9 0.95)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 63 "Net-(C18-Pad1)")
+			(pintype "passive")
+			(uuid "1c0c668b-ce3d-4741-b3d7-77a5988b9f29")
+		)
+		(pad "2" smd roundrect
+			(at 0.775 0)
+			(size 0.9 0.95)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(roundrect_rratio 0.25)
+			(net 64 "Net-(C18-Pad2)")
+			(pintype "passive")
+			(uuid "40004b2f-79a4-47ac-abb1-43355ab46150")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "778c48fd-7f53-4be2-a0d0-9a5430839b96")
@@ -7952,7 +9056,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a17a8e8d-255f-4f93-a9bc-d2f3b6404157")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8080,7 +9184,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 6 "Net-(C10-Pad1)")
+			(net 44 "Net-(C10-Pad1)")
 			(pintype "passive")
 			(uuid "9165b5cf-9929-42e2-ac19-ec4f6242729a")
 		)
@@ -8165,7 +9269,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/0d749512-4315-4632-b623-8cc27990d7c1")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -8364,7 +9468,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8379,7 +9483,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/695531e0-6447-4ce6-9d8a-8df985348600")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8592,7 +9696,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/cf7f2d29-b954-4850-8a40-06945b725e57")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -8806,7 +9910,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/ffe291f5-4941-44a1-93f2-950e7fb1567c")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr through_hole)
 		(fp_circle
@@ -8985,7 +10089,7 @@
 		)
 		(property ki_fp_filters "Crystal*")
 		(path "/11cc4fd8-d95f-4e1f-b7d9-99efbc0aee8d")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9205,7 +10309,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/0f3a7dd3-db54-4010-be02-d871813658da")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr through_hole)
 		(fp_circle
@@ -9369,7 +10473,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9384,7 +10488,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/8a7ad02f-8425-49d2-a276-c3470359f769")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9582,7 +10686,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9597,7 +10701,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/56ba1d45-2f3d-4eab-8afe-0260c20d5946")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9716,7 +10820,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 6 "Net-(C10-Pad1)")
+			(net 44 "Net-(C10-Pad1)")
 			(pintype "passive")
 			(uuid "5f88cea6-d410-4145-8781-1a7d0264f91a")
 		)
@@ -9725,393 +10829,11 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 44 "Net-(C9-Pad2)")
+			(net 6 "Net-(C9-Pad2)")
 			(pintype "passive")
 			(uuid "2256fdef-1045-49cf-8345-303510f303df")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-		(layer "F.Cu")
-		(uuid "8c6297ee-2522-4903-b1a7-61952009edf1")
-		(at -75.51 92 90)
-		(descr "wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm")
-		(tags "test point wire loop bead")
-		(property "Reference" "TP2"
-			(at 0.7 2.5 -90)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "43ce28b2-69a9-456f-8e49-58b94795460e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 0 -2.8 -90)
-			(layer "F.Fab")
-			(uuid "fd394f14-1e3e-4bb1-9bbd-93330374fec9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e4455e62-ac76-4cee-9106-766189fb8e1c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f6f8e617-2f1a-47b5-91e8-619ff87f9f6b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0a973b53-742a-42b7-a8dc-362cd32a4e69")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/f9a933d3-8285-4148-9b89-d183bd713b96")
-		(sheetname "Koreň")
-		(sheetfile "Repeater_memris_V2a.kicad_sch")
-		(attr through_hole)
-		(fp_circle
-			(center 0 0)
-			(end 1.5 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.SilkS")
-			(uuid "090e838c-85da-4ac3-896d-9d209b201631")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1.8 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "a0f82896-bea3-4518-ad92-46b8c11afc7f")
-		)
-		(fp_line
-			(start 0.9 -0.2)
-			(end 0.9 0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "8e0119e4-5f3b-4f5c-8534-5dd1e0d95467")
-		)
-		(fp_line
-			(start -0.9 -0.2)
-			(end 0.9 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "316670e9-12ad-4e87-8026-7b4185a802f2")
-		)
-		(fp_line
-			(start 0.9 0.2)
-			(end -0.9 0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "991700f2-93d2-4688-b98e-576b02c4c044")
-		)
-		(fp_line
-			(start -0.9 0.2)
-			(end -0.9 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "5b41037d-aecd-4a10-a0a8-5bb259c06e09")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1.3 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "bea6e3ab-3a18-4d7c-aaaa-852be3f8e9ab")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0.7 2.5 -90)
-			(layer "F.Fab")
-			(uuid "2efe9276-8a94-4fe5-a461-85fd082d6216")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0 90)
-			(size 2 2)
-			(drill 1)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 5 "+3.3REF")
-			(pinfunction "1")
-			(pintype "passive")
-			(teardrops
-				(best_length_ratio 0.5)
-				(max_length 1)
-				(best_width_ratio 1)
-				(max_width 2)
-				(curve_points 0)
-				(filter_ratio 0.9)
-				(enabled yes)
-				(allow_two_segments yes)
-				(prefer_zone_connections yes)
-			)
-			(uuid "99b36536-14d4-402e-9d61-dd25320bc9fd")
-		)
-		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-		(layer "F.Cu")
-		(uuid "8d9cee6c-2bb0-4ac3-9152-2fefdab9f3e5")
-		(at 45.855 37.02)
-		(descr "wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm")
-		(tags "test point wire loop bead")
-		(property "Reference" "TP11"
-			(at 0.7 2.5 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ba86d4be-10fe-4363-9edd-9c435a90e5c7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 0 -2.8 0)
-			(layer "F.Fab")
-			(uuid "bd66d9c1-aed6-429b-a8dc-f0f37e9578a5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e01d2565-4d50-4b82-b731-8366a2af1b6c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "472e64e3-881c-45d1-8308-d0f3f663e600")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f8f3f44e-af9f-4bb8-806a-2580d879f82d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/a04d092b-5e6c-4daa-9e14-889adb533b22")
-		(sheetname "Koreň")
-		(sheetfile "Repeater_memris_V2a.kicad_sch")
-		(attr through_hole)
-		(fp_circle
-			(center 0 0)
-			(end 1.5 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.SilkS")
-			(uuid "4861f511-edc0-4c7b-9598-2e42dc31d852")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1.8 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "5ebd20a8-292d-49b7-8e51-bc43f38429fc")
-		)
-		(fp_line
-			(start -0.9 -0.2)
-			(end 0.9 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "8ebf59d7-c0ff-4301-9336-e37111d6f24e")
-		)
-		(fp_line
-			(start -0.9 0.2)
-			(end -0.9 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "82f834a2-78b4-473f-8e8d-7ae52e301e7b")
-		)
-		(fp_line
-			(start 0.9 -0.2)
-			(end 0.9 0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "95e45a44-25cb-4a2f-8458-34732fb831bc")
-		)
-		(fp_line
-			(start 0.9 0.2)
-			(end -0.9 0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "158ff107-f868-4e18-a0a3-366454d00b14")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1.3 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "fb64c04c-5a63-4daa-aee8-a5c603b2947e")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0.7 2.5 0)
-			(layer "F.Fab")
-			(uuid "a13f5855-e6d1-4a36-9e2c-fd93af62603f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 2 2)
-			(drill 1)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 7 "AFSK_RX")
-			(pinfunction "1")
-			(pintype "passive")
-			(teardrops
-				(best_length_ratio 0.5)
-				(max_length 1)
-				(best_width_ratio 1)
-				(max_width 2)
-				(curve_points 0)
-				(filter_ratio 0.9)
-				(enabled yes)
-				(allow_two_segments yes)
-				(prefer_zone_connections yes)
-			)
-			(uuid "88311f93-c964-4644-a7e5-654c4a1ec2e4")
-		)
-		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10193,7 +10915,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/224e5157-d1f2-4ed8-93b4-34f208c0292a")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10407,7 +11129,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/75a0a668-ed5f-4865-b45a-d37ed6528b20")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10620,7 +11342,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/93caa79c-1eeb-4d70-a24c-c33b12761466")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -10835,7 +11557,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/9052f9fd-5da4-49b3-ab04-09b7353782b3")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10979,197 +11701,6 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-		(layer "F.Cu")
-		(uuid "96fe7781-e6b9-425c-9907-d7b7a122cc2e")
-		(at 43.655 46.215)
-		(descr "wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm")
-		(tags "test point wire loop bead")
-		(property "Reference" "TP10"
-			(at 0.7 2.5 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "4d765d52-9a59-483b-bc97-20f148d58809")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 0 -2.8 0)
-			(layer "F.Fab")
-			(uuid "524f21d6-2c2f-49c3-8d9d-04527c2650ba")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "00f9e0e5-854f-40f7-988d-4cd9108471a6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a16e4f98-c0ea-4b0f-a64f-5e779c4ae91f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "32d40e7a-b4b1-4da8-9c74-ce244c3dbe76")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/4327925d-e800-4dcd-88c5-9fd85fb2af2f")
-		(sheetname "Koreň")
-		(sheetfile "Repeater_memris_V2a.kicad_sch")
-		(attr through_hole)
-		(fp_circle
-			(center 0 0)
-			(end 1.5 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.SilkS")
-			(uuid "c66f010d-b3b3-437a-906b-0db2d23b2a20")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1.8 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "8742899e-5211-4a18-a800-aea1a4b1e30a")
-		)
-		(fp_line
-			(start -0.9 -0.2)
-			(end 0.9 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "92a1b7fc-89d7-455f-a1fa-cba04bcc2582")
-		)
-		(fp_line
-			(start -0.9 0.2)
-			(end -0.9 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2d0f78b6-7ad4-41b6-b56e-3be35b86c9f8")
-		)
-		(fp_line
-			(start 0.9 -0.2)
-			(end 0.9 0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "cb2335e5-33ec-4199-a97d-8c3ecdedf135")
-		)
-		(fp_line
-			(start 0.9 0.2)
-			(end -0.9 0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "02b4e9f9-4101-45fd-91b5-1a0f4505c656")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1.3 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "4fd4c8f8-5dad-4f0b-8ae7-22797fd9e34c")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0.7 2.5 0)
-			(layer "F.Fab")
-			(uuid "68fcae16-0157-4680-a2ea-d95f7d4342bb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 2 2)
-			(drill 1)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 10 "MIC_IN")
-			(pinfunction "1")
-			(pintype "passive")
-			(teardrops
-				(best_length_ratio 0.5)
-				(max_length 1)
-				(best_width_ratio 1)
-				(max_width 2)
-				(curve_points 0)
-				(filter_ratio 0.9)
-				(enabled yes)
-				(allow_two_segments yes)
-				(prefer_zone_connections yes)
-			)
-			(uuid "74fd1063-26f8-449f-8924-79fdec66a501")
-		)
-		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "MountingHole:MountingHole_2.7mm_Pad_Via"
 		(layer "F.Cu")
 		(uuid "98a3478e-4e82-4501-aaf8-7baf7bd6f140")
@@ -11239,7 +11770,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/f2f901b4-154b-41e3-bb63-692af9c9c782")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -11384,6 +11915,212 @@
 			(uuid "86815b3d-f356-405e-b516-6c257558c9c9")
 		)
 	)
+	(footprint "Spacemanic_SMD:L_0603_HS"
+		(layer "F.Cu")
+		(uuid "9afa8e12-6023-4ca7-a16e-961c9306e1f4")
+		(at -13.8 145.2)
+		(property "Reference" "L12"
+			(at 0 -1.5 0)
+			(layer "F.SilkS")
+			(uuid "e4ff280d-d044-4d44-a385-938d1346120b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "22nH"
+			(at 0 1.6 0)
+			(layer "F.Fab")
+			(uuid "d96a524a-de9a-473e-b2d2-f7963c5bc66f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Spacemanic_SMD:L_0603_HS"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "22696ba2-c4df-4c1c-9e34-28b50a6c600a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca8b379c-d35a-4f61-94e2-4d7749726e50")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0603HP-22NXGLW"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be209563-a62a-4bf4-9e32-8fb3668e6209")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/69884e89-2640-4f9c-bb89-edfbb9ab4bb2")
+		(sheetname "Root")
+		(sheetfile "Repeater_memris_V2a.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.5 -0.68)
+			(end 0.5 -0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "608185d7-3366-477e-b8ec-9105ef0d4029")
+		)
+		(fp_line
+			(start 0.5 0.68)
+			(end -0.5 0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "15b9771b-b5bc-4a58-91cf-39acb0d26ef1")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "29b2da93-afbb-4026-a626-95ac161aae62")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2fd77874-18a6-458a-ab3f-578d38048ee6")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ff74e6eb-0311-4de4-9d7d-698995ce73bc")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "65b57467-27db-4083-b200-ba7add00d906")
+		)
+		(fp_line
+			(start -0.8 -0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "10b9f488-ab72-4617-b51d-cf25cf278882")
+		)
+		(fp_line
+			(start -0.8 0.4)
+			(end -0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "68c6281d-ef56-48b4-a0bb-693f9526305b")
+		)
+		(fp_line
+			(start 0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "34731381-dc7c-4692-ba1c-4b54b667b954")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ce308e79-fe56-4a83-a066-1d73dd76092e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "bbc06939-a0ad-4a0c-9d06-916b160bc206")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.075)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.8 0)
+			(size 0.9 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 68 "Net-(C33-Pad2)")
+			(pintype "passive")
+			(uuid "b4524f20-5784-4715-8bdd-e1d24767bcb7")
+		)
+		(pad "2" smd rect
+			(at 0.8 0)
+			(size 0.9 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 63 "Net-(C18-Pad1)")
+			(pintype "passive")
+			(uuid "38952fd9-e7ab-473c-8cd1-031e53a342eb")
+		)
+		(model "${KISYS3DMOD}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "9e96eeeb-3e18-4ff9-b4ba-1a74dbf96136")
@@ -11453,7 +12190,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/1577139e-947a-445f-b750-8fdc46b9a7b0")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11667,7 +12404,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/74421813-cc20-4d75-a6c1-b50e03834018")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr through_hole)
 		(fp_circle
@@ -11857,7 +12594,7 @@
 		)
 		(property ki_fp_filters "DIP?14*")
 		(path "/b66c1bb7-5abf-449e-84a4-e41f7bb0e489")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -12233,7 +12970,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/73953eb2-5010-46e9-8548-5c645a4177f6")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12446,7 +13183,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/1b18d4f5-6f6e-4f12-8d97-5c4ef6b94062")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12644,7 +13381,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12659,7 +13396,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/e077ff59-e933-4cbe-9835-656b0da721df")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12778,7 +13515,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 1 "GND")
+			(net 61 "unconnected-(C14-Pad1)")
 			(pintype "passive")
 			(uuid "05c2f7e6-c83d-4abf-9180-78597586dfa4")
 		)
@@ -12787,7 +13524,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 2 "+5V")
+			(net 62 "unconnected-(C14-Pad2)")
 			(pintype "passive")
 			(uuid "6c8c4d97-cf60-47dd-90f0-f29921d923d9")
 		)
@@ -12872,7 +13609,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/1f768287-99bc-494b-8800-297f97e72e32")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13070,6 +13807,212 @@
 			)
 		)
 	)
+	(footprint "Spacemanic_SMD:C_0603_HS"
+		(layer "F.Cu")
+		(uuid "b7ed0cba-dba4-460f-a70e-be149b676a8d")
+		(at -17.35 135.28)
+		(property "Reference" "C30"
+			(at 0 -1.6 0)
+			(layer "F.SilkS")
+			(uuid "4a245206-7843-4c0d-a775-80e39540c551")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "15pF"
+			(at 0 1.6 0)
+			(layer "F.Fab")
+			(uuid "811b27e3-8995-4f2d-b959-6016525181d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Spacemanic_SMD:C_0603_HS"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8671d9f3-437e-4b28-8775-79dcd67a20f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f620f39-eeaf-46a1-9973-716b348f79c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "C0G/NP0, ±1%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ba97992-ce99-43b3-a259-4d93156e256d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/71c22d5c-ca9f-49d0-ac5f-8067b367259e")
+		(sheetname "Root")
+		(sheetfile "Repeater_memris_V2a.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.5 -0.68)
+			(end 0.5 -0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2bb9c02f-41fe-4894-b242-452a3b1d21ad")
+		)
+		(fp_line
+			(start 0.5 0.68)
+			(end -0.5 0.68)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d1d53ea6-11c1-4392-a9fd-6bca60a77265")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8a3c4945-e184-4640-9a85-03c2f6b86431")
+		)
+		(fp_line
+			(start -1.25 -0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "83fdb385-9a81-48ee-89b4-698e6381baf5")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end -1.25 0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c13d76f7-e456-446e-a188-d6bd15d25b9e")
+		)
+		(fp_line
+			(start 1.25 0.7)
+			(end 1.25 -0.7)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "812247bb-21f1-4235-a3df-75d1debc5d30")
+		)
+		(fp_line
+			(start -0.8 -0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d8d35b14-12ef-4867-9ded-f0fd27e1b308")
+		)
+		(fp_line
+			(start -0.8 0.4)
+			(end -0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "00528545-7cad-41fd-8728-e440cc7855b4")
+		)
+		(fp_line
+			(start 0.8 -0.4)
+			(end 0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4a26d885-8a46-4851-8470-caf245eacd06")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "158a296d-fbb2-4c7f-b4e3-1acd8cc9fca2")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "5b3b6c13-8a35-4ee5-9f83-c619b0dd9360")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.075)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.85 0)
+			(size 0.8 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 66 "Net-(C30-Pad1)")
+			(pintype "passive")
+			(uuid "e50e72de-be6b-4083-89c2-9bc897f35534")
+		)
+		(pad "2" smd rect
+			(at 0.85 0)
+			(size 0.8 0.9)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 65 "GND_RF")
+			(pintype "passive")
+			(uuid "0354fa71-1d1d-4c23-93d8-09d6428e7e1d")
+		)
+		(model "${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 		(layer "F.Cu")
 		(uuid "bc551ca5-abf5-4561-bc79-5c60883cf73f")
@@ -13139,7 +14082,7 @@
 		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/587093f4-a2ba-49c6-8b66-91bd7c7db537")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr through_hole)
 		(fp_circle
@@ -13318,7 +14261,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/abf1f2fe-b236-4e5c-9b14-08db8c826f83")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13532,7 +14475,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/ae61e775-621c-4951-ba23-6138e5e12a54")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13746,7 +14689,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/3b38b176-b59f-4f6a-b34d-956b5e59c7c8")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13980,7 +14923,7 @@
 			)
 		)
 		(path "/8caf9609-588f-42a2-8c07-ed693312d68a")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14121,7 +15064,7 @@
 			(size 0.8 0.4)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 60 "unconnected-(U6-Pad1)")
+			(net 71 "Net-(C19-Pad1)")
 			(pintype "output")
 			(uuid "9ea3ffb9-a88f-46f8-892a-0f7f6b2afbe2")
 		)
@@ -14130,7 +15073,7 @@
 			(size 0.8 0.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 59 "unconnected-(U6-Pad2)")
+			(net 1 "GND")
 			(pintype "power_in")
 			(uuid "80337a7a-6b33-4729-bb02-ccfc87473d14")
 		)
@@ -14139,7 +15082,7 @@
 			(size 0.8 0.4)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 58 "unconnected-(U6-Pad3)")
+			(net 64 "Net-(C18-Pad2)")
 			(pintype "input")
 			(uuid "1ae70955-2d00-46e3-a0f6-04b9af221c00")
 		)
@@ -14148,7 +15091,7 @@
 			(size 0.8 0.4)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 61 "unconnected-(U6-Pad4)")
+			(net 1 "GND")
 			(pintype "power_in")
 			(uuid "b5f1a246-641a-486d-a028-bf1d70960f5a")
 		)
@@ -14233,7 +15176,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/80198201-d7e3-427c-99e2-6ffaeb7e1117")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -14432,7 +15375,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14447,7 +15390,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/aa7c67b4-44de-464d-a76c-a5afa3581d7f")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14591,185 +15534,6 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-		(layer "F.Cu")
-		(uuid "e41c78b9-cfba-4d71-a83d-48d564877424")
-		(at 26 97)
-		(descr "wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm")
-		(tags "test point wire loop bead")
-		(property "Reference" "TP9"
-			(at 0.7 2.5 0)
-			(layer "F.SilkS")
-			(uuid "9d77143d-cf4b-42ca-a347-9a4a194bd11c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 0 -2.8 0)
-			(layer "F.Fab")
-			(uuid "fc5dea2d-132b-45a8-b148-f31d17b65fd0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5b2ecda5-98c5-4090-a106-f9dae2596c23")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a1ba09f6-8998-4c1c-91ca-13de28e26edd")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9956fb64-61a1-41b9-b28b-f8818436beef")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "Pin* Test*")
-		(path "/8d9674bc-65bb-4435-913e-f8a6160f123f")
-		(sheetname "Koreň")
-		(sheetfile "Repeater_memris_V2a.kicad_sch")
-		(attr through_hole)
-		(fp_circle
-			(center 0 0)
-			(end 1.5 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.SilkS")
-			(uuid "570a176f-830d-4e85-9e42-5644070d2e48")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1.8 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "3c2f1a8f-c86c-4955-9b4e-5ca8dcf6c0a1")
-		)
-		(fp_line
-			(start -0.9 -0.2)
-			(end 0.9 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "29352487-4f7b-4f1d-a840-e45d2feb3c24")
-		)
-		(fp_line
-			(start -0.9 0.2)
-			(end -0.9 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "9bb4ddca-6149-4134-b48a-da77f2188a48")
-		)
-		(fp_line
-			(start 0.9 -0.2)
-			(end 0.9 0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "be3ac1a4-a5d8-4009-8fe2-7640fbd92f28")
-		)
-		(fp_line
-			(start 0.9 0.2)
-			(end -0.9 0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e0eadc8f-36d0-400d-83a1-67fac5539add")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1.3 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "129ce31f-0221-401d-bd72-c30e2c87bb1e")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0.7 2.5 0)
-			(layer "F.Fab")
-			(uuid "7680c97e-751e-4ae2-a38b-f560c29ce7f5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 2 2)
-			(drill 1)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 2 "+5V")
-			(pinfunction "1")
-			(pintype "passive")
-			(uuid "760c30c2-be00-4148-985b-061abed7681e")
-		)
-		(model "${KICAD8_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e9d26de8-e0d7-4d7e-95cc-30ae46fee5fc")
@@ -14839,7 +15603,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/9a244741-9bba-4908-be03-899e0f8dea7c")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14958,7 +15722,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 44 "Net-(C9-Pad2)")
+			(net 6 "Net-(C9-Pad2)")
 			(pintype "passive")
 			(uuid "5fe107b5-a85d-40eb-b338-c50644f9c1cb")
 		)
@@ -15037,7 +15801,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15052,7 +15816,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/7e52c844-4e63-490a-b879-18f5e5ff05ad")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15171,7 +15935,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 6 "Net-(C10-Pad1)")
+			(net 44 "Net-(C10-Pad1)")
 			(pintype "passive")
 			(uuid "95a0442c-1f66-4a6e-b01c-b302aa497b2a")
 		)
@@ -15250,7 +16014,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15265,7 +16029,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/74666138-ce97-4be5-a620-b857621cc522")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15384,7 +16148,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 1 "GND")
+			(net 52 "unconnected-(C4-Pad1)")
 			(pintype "passive")
 			(uuid "0b910631-f078-46ec-9acc-324edb5b2bf9")
 		)
@@ -15393,7 +16157,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 2 "+5V")
+			(net 58 "unconnected-(C4-Pad2)")
 			(pintype "passive")
 			(uuid "7a7a927f-9fa0-4320-9fc5-5bfd3e5779bd")
 		)
@@ -15478,7 +16242,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/d83b562d-75ff-4558-a21e-ac509b28e30f")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15606,7 +16370,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 6 "Net-(C10-Pad1)")
+			(net 44 "Net-(C10-Pad1)")
 			(pintype "passive")
 			(uuid "7212dcdb-89bf-4721-8f46-172eb0aa0b29")
 		)
@@ -15676,7 +16440,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15691,7 +16455,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/7656d74a-34f7-47a1-88e6-40c057162f2a")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15904,7 +16668,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/c5587a2e-05d1-4032-b10c-625c3eae9dbd")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16023,7 +16787,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 6 "Net-(C10-Pad1)")
+			(net 44 "Net-(C10-Pad1)")
 			(pintype "passive")
 			(uuid "876ffada-5722-4148-bd86-7ba84040a7b8")
 		)
@@ -16118,7 +16882,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/7f9f5097-2713-4bfd-ad7c-dd0d4bb03835")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16354,7 +17118,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/20fc1fe4-67ee-4d43-a783-03d3136c9e26")
-		(sheetname "Koreň")
+		(sheetname "Root")
 		(sheetfile "Repeater_memris_V2a.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17513,60 +18277,20 @@
 		(uuid "62c3d1ae-4878-4215-aa93-ccb18ed0f2e2")
 	)
 	(segment
-		(start -64.81 71.95)
-		(end -64.81 73.535)
+		(start -69.39 75.2)
+		(end -69.4 75.21)
 		(width 0.4)
 		(layer "F.Cu")
 		(net 6)
-		(uuid "0d190c4a-dc3d-40c5-bf9e-8739c69d0540")
+		(uuid "22f9cdcd-22d9-417d-8821-b3cf8080818c")
 	)
 	(segment
-		(start -69.875 71.95)
-		(end -69.9 71.975)
+		(start -67.84 75.2)
+		(end -69.39 75.2)
 		(width 0.4)
 		(layer "F.Cu")
 		(net 6)
-		(uuid "51e22a91-58d5-4a92-a64e-5c5c8ad0368e")
-	)
-	(segment
-		(start -64.81 73.535)
-		(end -64.855 73.58)
-		(width 0.4)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "773b7845-a4db-4727-996a-897a04381f6a")
-	)
-	(segment
-		(start -64.855 73.58)
-		(end -64.855 73.765)
-		(width 0.4)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "868f5cbd-3368-4682-aeb2-127ca811d638")
-	)
-	(segment
-		(start -66.6 71.95)
-		(end -69.875 71.95)
-		(width 0.4)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "bf575d9a-e1e7-45be-8ee8-ae9cba13818a")
-	)
-	(segment
-		(start -64.855 73.765)
-		(end -66.29 75.2)
-		(width 0.4)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "c356ed89-aa24-4f1b-ba94-5a41aeb8a417")
-	)
-	(segment
-		(start -66.6 71.95)
-		(end -64.81 71.95)
-		(width 0.4)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "f61da706-7151-4223-894f-2a1c3bb57947")
+		(uuid "e130dcb5-2f1c-47d7-ba9a-5818d1ff62d9")
 	)
 	(segment
 		(start 53.005 44.845)
@@ -17745,20 +18469,60 @@
 		(uuid "30839c26-8da3-4354-b7bb-7b0712ef0e9b")
 	)
 	(segment
-		(start -69.39 75.2)
-		(end -69.4 75.21)
+		(start -64.81 71.95)
+		(end -64.81 73.535)
 		(width 0.4)
 		(layer "F.Cu")
 		(net 44)
-		(uuid "22f9cdcd-22d9-417d-8821-b3cf8080818c")
+		(uuid "0d190c4a-dc3d-40c5-bf9e-8739c69d0540")
 	)
 	(segment
-		(start -67.84 75.2)
-		(end -69.39 75.2)
+		(start -69.875 71.95)
+		(end -69.9 71.975)
 		(width 0.4)
 		(layer "F.Cu")
 		(net 44)
-		(uuid "e130dcb5-2f1c-47d7-ba9a-5818d1ff62d9")
+		(uuid "51e22a91-58d5-4a92-a64e-5c5c8ad0368e")
+	)
+	(segment
+		(start -64.81 73.535)
+		(end -64.855 73.58)
+		(width 0.4)
+		(layer "F.Cu")
+		(net 44)
+		(uuid "773b7845-a4db-4727-996a-897a04381f6a")
+	)
+	(segment
+		(start -64.855 73.58)
+		(end -64.855 73.765)
+		(width 0.4)
+		(layer "F.Cu")
+		(net 44)
+		(uuid "868f5cbd-3368-4682-aeb2-127ca811d638")
+	)
+	(segment
+		(start -66.6 71.95)
+		(end -69.875 71.95)
+		(width 0.4)
+		(layer "F.Cu")
+		(net 44)
+		(uuid "bf575d9a-e1e7-45be-8ee8-ae9cba13818a")
+	)
+	(segment
+		(start -64.855 73.765)
+		(end -66.29 75.2)
+		(width 0.4)
+		(layer "F.Cu")
+		(net 44)
+		(uuid "c356ed89-aa24-4f1b-ba94-5a41aeb8a417")
+	)
+	(segment
+		(start -66.6 71.95)
+		(end -64.81 71.95)
+		(width 0.4)
+		(layer "F.Cu")
+		(net 44)
+		(uuid "f61da706-7151-4223-894f-2a1c3bb57947")
 	)
 	(segment
 		(start 52.995 47.375)
